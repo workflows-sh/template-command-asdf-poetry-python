@@ -1,0 +1,6 @@
+# for more info visit https://cto.ai/docs
+version: "1"
+commands:
+  - name: template-command-asdf-poetry-python:0.1.0
+    description: Command template that uses asdf, poetry, and the Python SDK.
+    run: poetry run python /ops/main.py

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "template-command-asdf-poetry-python"
+version = "0.1.0"
+description = ""
+authors = ["Nick Anderegg <nick@cto.ai>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cto-ai = "^2.3.3"
+pydo = {git = "https://github.com/digitalocean/pydo.git"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pytest = "^8.3.3"
+mypy = "^1.13.0"
+pydocstyle = "^6.3.0"
+pdbpp = "^0.10.3"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
